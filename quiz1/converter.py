@@ -6,7 +6,9 @@ def meters_to_feet(meters: float) -> float:
     :param meters: A float representing a measurement in meters.
     :return: A float representing the input measurement converted to feet.
     """
-    pass  # implement me
+    feet = meters / 3.28084
+    feet_float = round(feet, 2)
+    return feet_float
 
 
 def feet_to_meters(feet: float) -> float:
@@ -17,4 +19,6 @@ def feet_to_meters(feet: float) -> float:
     :param feet: A float representing a measurement in feet.
     :return: A float representing the input measurement converted to meters.
     """
-    pass  # implement me
+    meters = feet * 3.28084
+    meters_float = round(meters, 2)
+    return meters_float
