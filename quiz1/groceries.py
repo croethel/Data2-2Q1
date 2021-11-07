@@ -4,4 +4,6 @@ def checkout(cash: float, list: dict) -> float:
     from the cash passed into the function.
     return the "change" from the cash minus the total groceries value.
     """
-    pass  # implement me
+    grocery_cost = sum(list.values())
+    change = cash - grocery_cost
+    return change
