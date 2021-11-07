@@ -7,3 +7,5 @@ def checkout(cash: float, list: dict) -> float:
     grocery_cost = sum(list.values())
     change = cash - grocery_cost
     return change
+
+
