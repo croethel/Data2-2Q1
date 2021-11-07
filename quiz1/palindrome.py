@@ -4,4 +4,9 @@ def palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    pass  # remove pass statement and implement me
+    no_spaces = value.replace(" ", "")
+    lower_case = no_spaces.lower()
+    if lower_case[::-1] == lower_case:
+        return True
+    else:
+        return False
